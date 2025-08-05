@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BASE DE DATOS</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+      padding: 2rem;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 2.5rem;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      padding: 1rem;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card iframe {
+      width: 100%;
+      height: 200px;
+      border: none;
+      border-radius: 10px;
+    }
+
+    .card h2 {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+      color: #111;
+    }
+
+    .card p {
+      color: #555;
+      font-size: 0.95rem;
+      margin: 0.5rem 0 1rem;
+    }
+
+    .card button {
+      border: 1px solid #505050;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 20px;
+      background-color: white;
+      border-radius: 12px;
+      font-size: 16px;
+      color: black;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+    .card button:hover {
+      transform: translateY(-5px);
+      background-color: #000000;
+      color: #fff;
+    }
+    .btn-volver {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 20px;
+      background-color: white;
+      border: 1px solid #ffffff;
+      border-radius: 12px;
+      font-size: 16px;
+      color: black;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+    .btn-volver:hover {
+      transform: translateY(-5px);
+      color: #fff;
+      background-color: #000000;
+    }
+
+    
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <p><a href="index.html" class="btn-volver">Volver</a></p>
+  <h1>BASE DE DATOS</h1>
+  <div class="grid-container">
+    <!-- Tarjeta Semana 1 -->
+    <div class="card">
+      <img src="img/image.png" alt="Semana 1" style="width: 100%; border-radius: 10px;">
+      <h2>Semana1</h2>
+      <p>Introducción</p>
+      <button onclick="descargarPDF('SEMANA1.pdf')">Descargar PDF</button>
+    </div>
+
+    <!-- Tarjeta Semana 2 -->
+    <div class="card">
+      <img src="img/image copy.png" alt="Semana 2" style="width: 100%; border-radius: 10px;">
+      <h2>Semana2</h2>
+      <p>Introducción</p>
+      <button onclick="descargarPDF('semana2.pdf')">Descargar PDF</button>
+    </div>
+
+    <!-- Tarjeta Semana 3 -->
+    <div class="card">
+      <img src="img/image copy 2.png" alt="Semana 3" style="width: 100%; border-radius: 10px;">
+      <h2>Semana3</h2>
+      <p>Introducción</p>
+      <button onclick="descargarPDF('semana3.pdf')">Descargar PDF</button>
+    </div>
+
+    <!-- Tarjeta Semana 4 -->
+    <div class="card">
+      <img src="img/image copy 3.png" alt="Semana 4" style="width: 100%; border-radius: 10px;">
+      <h2>Semana4</h2>
+      <p>Introducción SQL</p>
+      <button onclick="descargarPDF('semana4.pdf')">Descargar PDF</button>
+    </div>
+    <!-- Tarjeta Semana 5 -->
+    <div class="card">
+      <img src="img/image copy 4.png" alt="Semana 5" style="width: 100%; border-radius: 10px;">
+      <h2>Semana5</h2>
+      <p>SQL</p>
+      <button onclick="descargarPDF('semana5.pdf')">Descargar PDF</button>
+    </div>
+    <!-- Tarjeta Semana 6 -->
+    <div class="card"> 
+      <img src="img/image copy 5.png" alt="Semana 6" style="width: 100%; border-radius: 10px;">
+      <h2>Semana6</h2>
+      <p>SQL</p>
+      <button onclick="descargarPDF('semana6.pdf')">Descargar PDF</button>
+    </div>
+    <!-- Tarjeta Semana 7 -->
+    <div class="card">  
+      <img src="img/image copy 6.png" alt="Semana 7" style="width: 100%; border-radius: 10px;">
+      <h2>Semana7</h2>
+      <p>SQL</p>
+      <button onclick="descargarPDF('semana7.pdf')">Descargar PDF</button>
+    </div>
+    <!-- Tarjeta Semana 8 -->
+    <div class="card">  
+      <img src="img/image copy 7.png" alt="Semana 8" style="width: 100%; border-radius: 10px;">
+      <h2>Semana8</h2>
+      <p>SQL</p>
+      <button onclick="descargarPDF('semana8.pdf')">Descargar PDF</button>   
+    </div>
+    <!-- Tarjeta Semana 9 -->
+    <div class="card">  
+      <img src="img/image copy 8.png" alt="Semana 9" style="width: 100%; border-radius: 10px;">
+      <h2>Semana9</h2>
+      <p>Introducción SQL SERVER</p>
+      <button onclick="descargarPDF('semana9.pdf')">Descargar PDF</button>
+    </div>
+    <!-- Tarjeta Semana 10 --> 
+    <div class="card">  
+      <img src="img/image copy 9.png" alt="Semana 10" style="width: 100%; border-radius: 10px;">
+      <h2>Semana10</h2>
+      <p>Introducción SQL SERVER</p>
+      <button onclick="descargarPDF('semana10.pdf')">Descargar PDF</button>
+    </div>
+    <!-- Tarjeta Semana 11 -->
+    <div class="card">  
+      <img src="img/image copy 10.png" alt="Semana 11" style="width: 100%; border-radius: 10px;">
+      <h2>Semana11</h2>
+      <p>SQL SERVER</p>
+      <button onclick="descargarPDF('semana11.pdf')">Descargar PDF</button>
+    </div>
+    <!-- Tarjeta Semana 12 -->
+    <div class="card">  
+      <img src="img/image copy 11.png" alt="Semana 12" style="width: 100%; border-radius: 10px;">
+      <h2>Semana12</h2>
+      <p>SQL SERVER</p>
+      <button onclick="descargarPDF('semana12.pdf')">Descargar PDF</button>
+    </div>
+    <!-- Tarjeta Semana 13 -->
+    <div class="card">  
+      <img src="img/image copy 12.png" alt="Semana 13" style="width: 100%; border-radius: 10px;">
+      <h2>Semana13</h2>
+      <p>SQL SERVER</p>
+      <button onclick="descargarPDF('semana13.pdf')">Descargar PDF</button>
+    </div>
+    <!-- Tarjeta Semana 14 -->
+    <div class="card">  
+      <img src="img/image copy 13.png" alt="Semana 14" style="width: 100%; border-radius: 10px;">
+      <h2>Semana14</h2>
+      <p>SQL SERVER</p>
+      <button onclick="descargarPDF('semana14.pdf')">Descargar PDF</button>
+    </div>
+    <!-- Tarjeta Semana 15 -->
+    <div class="card">  
+      <img src="img/image copy 15.png" alt="Semana 15" style="width: 100%; border-radius: 10px;">
+      <h2>Semana15</h2>
+      <p>SQL SERVER</p>
+      <button onclick="descargarPDF('semana15.pdf')">Descargar PDF</button>
+    </div>
+  </div>
+
+  <script>
+    function descargarPDF(nombreArchivo) {
+      window.open(`pdfs/${nombreArchivo}`, "_blank");
+    }
+  </script>
+</body>
+</html>
